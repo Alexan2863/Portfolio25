@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  height: 100%;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 600;
+  color: #212529;
+  overflow-x: hidden;
+  background-color: whitesmoke;
+}
+
+h1,
+h2 {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 600;
+  color: #212529;
+}

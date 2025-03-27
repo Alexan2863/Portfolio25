@@ -1,0 +1,34 @@
+.slide {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 16px;
+  margin: 2rem 5rem;
+}
+
+.img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.port-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
