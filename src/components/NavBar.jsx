@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./NavBar.css";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-sm shadow">
+      <a
+        className="navbar-brand text-white"
+        href="https://www.linkedin.com/in/alex-powell2863/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="bi bi-linkedin px-5"></i>
+      </a>
       <div className="container d-flex flex-row justify-content-end">
         <ul className="navbar-nav">
           <li className="nav-item">

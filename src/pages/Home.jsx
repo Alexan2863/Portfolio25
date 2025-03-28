@@ -2,6 +2,7 @@ import me from "/assets/profilepic.jpg";
 import "./Home.css";
 import Button from "../components/UI/Button";
 import Services from "../components/Services";
+import About from "../components/About";
 
 function Home() {
   const openResume = () => {
@@ -32,6 +33,10 @@ function Home() {
         </div>
       </div>
       <Services />
+      <div>
+        <h2 className="text-center pt-4 fw-bold ">About Me</h2>
+        <About />
+      </div>
     </div>
   );
 }
