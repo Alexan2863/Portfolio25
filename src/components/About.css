@@ -1,0 +1,112 @@
+.hobby-carousel-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.hobby-carousel-track {
+  display: flex;
+  transition: transform 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  width: 100%;
+}
+
+.hobby-card {
+  min-width: 80%;
+  max-width: 80%;
+  margin: 0 10%;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 1.5px 6px rgba(0,0,0,0.10);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hobby-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.95);
+  border: none;
+  font-size: 2rem;
+  color: #6116c9;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.hobby-arrow.left {
+  left: 16px;
+}
+.hobby-arrow.right {
+  right: 16px;
+}
+.hobby-arrow:focus {
+  outline: 2px solid #6116c9;
+  background: #f3eaff;
+}
+.hobby-arrow:hover {
+  background: #e5d6fa;
+  color: #3d0e7e;
+}
+
+.hobby-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+.hobby-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d1c4e9;
+  display: inline-block;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 1px 3px rgba(97,22,201,0.08);
+  cursor: pointer;
+}
+.hobby-dot.active {
+  background: #6116c9;
+  transform: scale(1.2);
+  box-shadow: 0 2px 8px rgba(97,22,201,0.18);
+}
+
+@media (max-width: 768px) {
+  .hobby-card {
+    min-width: 95%;
+    max-width: 95%;
+    margin: 0 2.5%;
+    padding: 1rem;
+  }
+  .hobby-carousel-container {
+    max-width: 100vw;
+  }
+  .hobby-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.5rem;
+  }
+  .hobby-arrow.left {
+    left: 8px;
+  }
+  .hobby-arrow.right {
+    right: 8px;
+  }
+} 

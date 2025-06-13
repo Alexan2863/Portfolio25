@@ -1,8 +1,8 @@
 import "./Process.css";
-import process1 from "/assets/process1.png";
-import process2 from "/assets/process2.png";
-import process3 from "/assets/process3.png";
-import process4 from "/assets/process4.png";
+import process1 from "/assets/stellr-design.png";
+import process2 from "/assets/stellr-paper.png";
+import process3 from "/assets/stellr-medium.png";
+import process4 from "/assets/stellr-home.png";
 
 function Process() {
   return (
@@ -14,7 +14,7 @@ function Process() {
               <strong>My Process</strong>
             </h2>
             <p className="text-center">
-              A deep dive into the Ultimate spice guide
+              A deep dive into Stellr
             </p>
           </div>
         </div>
@@ -24,10 +24,11 @@ function Process() {
             <img src={process1} className="card-img-top" alt="..." />
             <div className="card-body">
               <p className="card-text">
-                <strong>Step 1: Research and Strategy</strong> <br />
+                <strong>Step 1: Research and Design</strong> <br />
                 Create a site map outlining the main pages and how they will be
-                interconnected. Conduct interviews to learn about user needs and
-                expectations.
+                connected. Conduct interviews to learn about user needs and
+                expectations. Identify brand standards, colors & fonts, create visual assets,
+                and determine overall visual feel.
               </p>
             </div>
           </div>
@@ -47,20 +48,19 @@ function Process() {
             <img src={process3} className="card-img-top" alt="..." />
             <div className="card-body">
               <p className="card-text">
-                <strong>Step 3: Design</strong> <br />
-                Identify brand standards, colors & fonts, create visual assets,
-                and determine overall visual feel.
+                <strong>Step 3: Medium Fidelity Prototype</strong> <br />
+                Create a medium fidelity prototype to test the design and functionality of the app.
               </p>
             </div>
           </div>
 
           <div className="card shadow mb-2" style={{ width: "18rem" }}>
-            <img src={process4} className="card-img-top" alt="..." />
+            <img src={process4} className="card-img-top process4-img" alt="..." />
             <div className="card-body">
               <p className="card-text">
-                <strong>Step 4: Prototypes</strong> <br />
-                Apply design elements to better understand the feel and function
-                of the website.
+                <strong>Step 4: High Fidelity Prototype</strong> <br />
+                Apply design elements to test the feel and function
+                of the app with real users.
               </p>
             </div>
           </div>
@@ -69,26 +69,14 @@ function Process() {
         <div className="study-description">
           <h2 className="text-decoration-underline mt-5">Introduction</h2>
           <p className="mb-3">
-            The Ultimate Spice Guide is a user-friendly website designed to help
-            college students and young adults explore new cultural foods at home
-            by introducing them to a variety of spices. The website offers
-            easy-to-follow recipes that incorporate these spices while using
-            familiar ingredients. The site aims to make cooking accessible and
-            enjoyable for those on a budget.
+          Stellr is a high-fidelity mobile app prototype designed to help users discover, share, and discuss short-form video content within vibrant communities. The app aims to create a social space where users can join interest-based groups, post their favorite videos, and connect with others who share similar tastes.
           </p>
 
           <hr className="solid" />
 
           <h2 className="text-decoration-underline">Project Background</h2>
-          <h3>Initial Concept</h3>
           <p className="mb-3">
-            The idea for the Ultimate Spice Guide originated from the need to
-            address the lack of cooking knowledge among young adults and college
-            students. Initially, the project focused on the history and health
-            benefits of spices, targeting enthusiasts. However, during the
-            planning stage, the scope was redefined to cater to budget-conscious
-            users, making it a niche market for easy-to-browse and
-            budget-friendly cooking guides.
+          The idea for Stellr emerged from the growing popularity of short-form video platforms and the need for more community-driven discovery. The goal was to combine the addictive nature of video feeds with the depth of community interaction, allowing users to consume content and participate in discussions and communities that align with their interests. <br/> This project was a test of our abilities to design and develop a mobile-first app following Google's Material Design Principles and Apple's Human Interface Guidelines to compare and contrast Android and iOS.
           </p>
 
           <hr className="solid" />
@@ -98,25 +86,20 @@ function Process() {
           </h2>
           <h3>User Experience Design</h3>
           <p>
-            To ensure the website was user-friendly, extensive research and
-            design processes were undertaken:
+          To ensure Stellr would be engaging and intuitive, the following steps were taken:
           </p>
           <ul className="mb-3">
             <li>
-              Sitemaps: Detailed sitemaps were created to outline the website
-              structure.
+            Sitemaps: Outlined the app’s main sections, including the feed, communities, and user profiles.
             </li>
             <li>
-              User Flows: Developed to visualize how users would navigate the
-              site.
+            User Flows: Mapped out how users would navigate between discovering content, joining communities, and posting.
             </li>
             <li>
-              Personas: Created to represent different user types and their
-              needs.
+            Personas: Developed to represent different user motivations, such as content creators, casual viewers, and community leaders.
             </li>
             <li>
-              Usability Testing: Conducted to gather feedback and make necessary
-              adjustments.
+            Usability Testing: Conducted with interactive prototypes to gather feedback on navigation, posting, and community features.
             </li>
           </ul>
 
@@ -126,21 +109,15 @@ function Process() {
               Illustrator: Used for initial designs and creating specific
               elements.
             </li>
-            <li>Figma: Employed for creating interactive prototypes.</li>
+            <li>Figma: Used extensively for wireframing, prototyping, and high-fidelity design.</li>
             <li>
-              HTML/CSS/JavaScript: Utilized for front-end development to ensure
-              responsiveness and user interaction.
+            User Research: Interviews and surveys to understand what users want from a video community app.
             </li>
           </ul>
 
           <h3>Color and Font</h3>
           <p className="mb-3">
-            The color palette was chosen to create a warm, inviting, and
-            appetizing look. I chose EB Garamond for its classic, elegant feel,
-            making the text easy to read and giving the site a touch of
-            sophistication; Montserrat I chose for its modern and clean look,
-            ideal for headings and ensuring readability across different
-            devices.
+          The color palette was chosen to be modern and energetic, appealing to a young, social audience. Clean, readable fonts were selected to ensure clarity and accessibility across devices. We used a space theme for our brand identity to signify the vastness of the web and the potential to connect with others around the world.
           </p>
 
           <h3>Layout</h3>
@@ -150,19 +127,13 @@ function Process() {
           </p>
           <ul className="mb-3">
             <li>
-              Use of Pictures: Lots of pictures were used to draw users around
-              the site. During testing, it was observed that users mostly
-              skimmed content and clicked on images that interested them.
-              Therefore, the final layout limits the amount of written content
-              required to find a recipe, focusing on visual appeal.
+            Visual Engagement: The design emphasizes video thumbnails and community icons to draw users into content and groups.
             </li>
             <li>
-              Responsive Design: Ensured the website is mobile-friendly, with
-              images and lists stacking in a single column on smaller screens.
+            Navigation: A bottom navigation bar provides quick access to the feed, communities, posting, and user profile.
             </li>
             <li>
-              Navigation: Full navigation is visible on medium screens, making
-              it easy for users to find what they need.
+              Iconography: Clear icons for actions like posting, joining communities, and viewing profiles.
             </li>
           </ul>
 
@@ -173,16 +144,13 @@ function Process() {
           </p>
           <ul>
             <li>
-              Simplicity: Users wanted straightforward recipes that didn't
-              require obscure ingredients.
+            Community: Users wanted spaces to discuss and recommend content.
             </li>
             <li>
-              Visuals: High-quality images of spices and dishes were important
-              for engagement.
+            Ease of Posting: Simple, fast ways to share videos and images.
             </li>
             <li>
-              Educational Content: Users appreciated brief educational content
-              about the spices.
+            Personalization: Ability to follow communities and see tailored feeds.
             </li>
           </ul>
           <p className="mb-3">
@@ -195,46 +163,36 @@ function Process() {
           <h2 className="text-decoration-underline">
             Challenges and Solutions
           </h2>
-          <h3>Challenge: Limited Experience</h3>
+          <h3>Challenge: Balancing Feed and Community</h3>
           <p>
-            As a student, the project was a significant learning experience. The
-            main challenge was understanding user needs from a perspective
-            outside of the creator’s own.
+          It was challenging to design an experience that felt both like a content feed and a community platform.
           </p>
           <p className="mb-3">
-            Solution: Conducted usability testing with potential users to gather
-            feedback and made necessary adjustments to improve the user
-            experience.
+          Solution: Integrated community features directly into the feed and allowed users to filter by group or trending topics.
           </p>
 
-          <h3>Challenge: Time Constraints</h3>
+          <h3>Challenge: Encouraging Engagement
+          </h3>
           <p>
-            Balancing the project with academic responsibilities was
-            challenging.
+          Getting users to post and interact, not just consume.
+
           </p>
           <p className="mb-3">
-            Solution: Effective time management and breaking the project into
-            smaller, manageable tasks helped in meeting deadlines.
+          Solution: Added prompts, easy posting options, and visible community activity to encourage participation.
+
           </p>
 
           <h3>Results and Impact</h3>
           <p className="mb-3">
-            The Ultimate Spice Guide website successfully met its objectives by
-            providing a user-friendly platform for young adults and college
-            students to explore new spices and recipes. Feedback from usability
-            testing showed that users found the site easy to navigate and
-            appreciated the detailed information on each spice.
+          The Stellr prototype was well-received in user testing, with participants praising the clean design and the ability to join and interact with communities. Feedback indicated that the app successfully blended content discovery with social interaction.
+
           </p>
 
           <hr className="solid" />
 
           <h2 className="text-decoration-underline">Conclusion</h2>
           <p>
-            The Ultimate Spice Guide project was an enriching experience that
-            combined research, design, and development skills to create a
-            valuable resource for young cooks. The project highlighted the
-            importance of user-centered design and the need for continuous
-            improvement based on user feedback.
+          Stellr demonstrates the value of combining user research, thoughtful design, and iterative testing to create a compelling social video app. The project highlights the importance of community in content platforms and the need for intuitive, engaging user experiences. <br/> This project was a great learning experience in applying Google's Material Design Principles and Apple's Human Interface Guidelines to design and develop a mobile-first app.
           </p>
         </div>
       </div>

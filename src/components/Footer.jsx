@@ -14,8 +14,7 @@ function Footer() {
               Feel free to reach out to me directly.
               <br />
               <hr className="bg-secondary d-inline-block mb-4" />
-              Email: alexan2863@gmail.com <br />
-              Phone: (801) 940-4758
+              Email: alexan2863@gmail.com
             </div>
           </div>
         </div>
@@ -25,7 +24,7 @@ function Footer() {
             <div className="row text-center text-white">
               <div className="col-12">
                 <div className="footer-bottom__copyright">
-                  © Copyright 2024 | Created by Alex Powell
+                  © Copyright 2025 | Created by Alex Powell
                 </div>
               </div>
             </div>

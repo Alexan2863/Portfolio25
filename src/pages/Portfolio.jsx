@@ -1,5 +1,5 @@
-import recipes from "/assets/recipes-app.png";
-import spiceThumbnail from "/assets/spiceGuideThumbnail.png";
+import recipes from "/assets/recipe-reverie.png";
+import stellr from "/assets/stellr-prototype.png";
 import Streamline from "/assets/Streamline-final.png";
 import Button from "../components/UI/Button";
 import Process from "../components/Process.jsx";
@@ -25,21 +25,28 @@ function Portfolio() {
         <div className="port-content">
           <p>
             Practiced HTTP requests on this{" "}
-            <a href="https://recipes-powell.netlify.app/">Recipe App</a> and
-            using custom hooks in this Vite project.
+            <a href="https://recipe-reverie.netlify.app/">Recipe Reverie</a>, also
+            using custom hooks and Firebase Auth.
           </p>
 
           <h2>Key Features:</h2>
           <ol>
-            <li>Display recipe information nicely.</li>
+            <li>Display recipe name, description and author on cards.</li>
             <li>Use Firebase to store recipes.</li>
             <li>Have a GET and POST requests from Firebase.</li>
             <li>Practice form validation.</li>
+            <li>Have a login page</li>
+            <li>Dynamically display recipe details on click.</li>
           </ol>
 
           <h2>Technology Used:</h2>
           <ul>
-            <li>Front-End: HTML, CSS, JavaScript</li>
+            <li>Front-End: React, Vite, HTML, CSS, JavaScript</li>
+            <li>Back-End: Firebase</li>
+            <li>Design Tools: Figma</li>
+            <li>Authentication: Firebase Auth</li>
+            <li>UI Framework: React Bootstrap</li>
+            <li>Routing: React Router</li>
           </ul>
         </div>
       </div>
@@ -47,30 +54,28 @@ function Portfolio() {
       <div className="slide border-bottom">
         <div className="img">
           <img
-            src={spiceThumbnail}
-            alt="Ultimate Spice Guide Website Thumbnail"
+            src={stellr}
+            alt="Stellr High Fidelity Prototype"
             className="img-fluid"
           />
         </div>
         <div className="port-content">
           <p>
-            The Ultimate Spice Guide provides users with detailed information on
-            various spices, including their origins, culinary uses, health
-            benefits, and flavor profiles.
+            Developed a high-fidelity prototype for a mobile app called  <a href="https://www.figma.com/design/tIk8WdsKjAc3QtDAgYxiGQ/High-Fidelity-Prototype--Copy-?node-id=0-1&t=AhzAbE8nQxwIwjsG-1">Stellr</a>,
+            which allows users to explore short form vidoe content and join communities to discuss and share their favorite content.
           </p>
 
           <h3>Key Features:</h3>
           <ol>
             <li>
-              User Contributions: Enabled users to submit their own spices and
-              recipes, as well as reviews, fostering a community of spice
-              enthusiasts.
+              Community: Users can join communities to discuss and share their favorite content.
             </li>
+            <li>Scrolling Feed: Users can scroll through a feed of short form video content.</li>
+            <li>Posting Options: Users can post videos and images to the feed, specific communities, or to friends and family.</li>
           </ol>
 
           <h3>Technology Used:</h3>
           <ul>
-            <li>Front-End: HTML, CSS, JavaScript</li>
             <li>Design Tools: Figma</li>
           </ul>
         </div>
@@ -86,7 +91,7 @@ function Portfolio() {
         </div>
         <div className="port-content">
           <p>
-            Developed an interactive and comprehensive website dedicated to
+            <a href="https://www.figma.com/design/PRn70W9emukKJFQxttNLCz/Streamline---Updated--Copy-?t=AhzAbE8nQxwIwjsG-1">Streamline</a> is an interactive and comprehensive website dedicated to
             simplifying the search process involved in finding a new show to
             watch.
           </p>

@@ -32,3 +32,11 @@ h3 {
   justify-content: center;
   text-align: left;
 }
+
+@media (max-width: 768px) {
+  .slide {
+    flex-direction: column;
+    margin: 1rem;
+    gap: 0.5rem;
+  }
+}

@@ -41,8 +41,21 @@
     max-width: 100%;
   }
   .case-study {
+    padding: 10px;
     .study-description {
-      margin: auto 2rem;
+      margin: 0 0.5rem 1.5rem 0.5rem;
+    }
+    .process-cards {
+      gap: 8px;
+      margin-bottom: 1rem;
     }
   }
+}
+
+.process4-img {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

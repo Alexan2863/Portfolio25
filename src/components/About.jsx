@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCoffee,
@@ -5,84 +6,66 @@ import {
   faMountain,
   faPlane,
 } from "@fortawesome/free-solid-svg-icons";
+import "./About.css";
+
+const hobbies = [
+  {
+    icon: faCoffee,
+    title: "Cooking",
+    text: "I love experimenting with new ingredients and creating delicious meals.",
+  },
+  {
+    icon: faGamepad,
+    title: "Gaming",
+    text: "Gaming is a great way to relax and it's where I spend the most time with my friends.",
+  },
+  {
+    icon: faMountain,
+    title: "Hiking",
+    text: "I like the hiking options in Utah and all the beautiful views. It's my goal to see them all!",
+  },
+  {
+    icon: faPlane,
+    title: "Traveling",
+    text: "I love to travel and see new things, my favorite places to go are historical sites and museums.",
+  },
+];
 
 function About() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % hobbies.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <>
-      <div
-        id="hobbiesCarousel"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="5000"
-      >
-        <div className="carousel-inner">
-          {/* Card 1: Cooking */}
-          <div className="carousel-item active">
-            <div className="card text-center">
-              <div className="card-body">
-                <FontAwesomeIcon
-                  icon={faCoffee}
-                  style={{ fontSize: "3rem", color: "#6116c9" }}
-                />
-                <h5 className="card-title">Cooking</h5>
-                <p className="card-text">
-                  I love experimenting with new ingredients and creating
-                  delicious meals.
-                </p>
-              </div>
+      <div className="hobby-carousel-container">
+        <div
+          className="hobby-carousel-track"
+          style={{
+            transform: `translateX(-${current * 100}%)`,
+          }}
+        >
+          {hobbies.map((hobby, idx) => (
+            <div className="hobby-card" key={idx}>
+              <FontAwesomeIcon icon={hobby.icon} style={{ fontSize: "3rem", color: "#6116c9" }} />
+              <h5>{hobby.title}</h5>
+              <p>{hobby.text}</p>
             </div>
-          </div>
-
-          {/* Card 2: Gaming */}
-          <div className="carousel-item">
-            <div className="card text-center">
-              <div className="card-body">
-                <FontAwesomeIcon
-                  icon={faGamepad}
-                  style={{ fontSize: "3rem", color: "#6116c9" }}
-                />
-                <h5 className="card-title">Gaming</h5>
-                <p className="card-text">
-                  Gaming is a great way to relax and it's where I spend the most
-                  time with my friends.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3: Hiking */}
-          <div className="carousel-item">
-            <div className="card text-center">
-              <div className="card-body">
-                <FontAwesomeIcon
-                  icon={faMountain}
-                  style={{ fontSize: "3rem", color: "#6116c9" }}
-                />
-                <h5 className="card-title">Hiking</h5>
-                <p className="card-text">
-                  I like the hiking options in Utah and all the beautiful views.
-                  It's my goal to see them all!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 4: Traveling */}
-          <div className="carousel-item">
-            <div className="card text-center">
-              <div className="card-body">
-                <FontAwesomeIcon
-                  icon={faPlane}
-                  style={{ fontSize: "3rem", color: "#6116c9" }}
-                />
-                <h5 className="card-title">Traveling</h5>
-                <p className="card-text">
-                  I love to travel and see new things, my favorite places to go
-                  are historical sites and museums.
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
+        </div>
+        <div className="hobby-dots">
+          {hobbies.map((_, idx) => (
+            <span
+              key={idx}
+              className={`hobby-dot${current === idx ? " active" : ""}`}
+              onClick={() => setCurrent(idx)}
+            ></span>
+          ))}
         </div>
       </div>
 
